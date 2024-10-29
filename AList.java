@@ -93,4 +93,9 @@ class AList<E> implements List<E> {
     assert (curr >= 0) && (curr < listSize) : "No current element";
     return listArray[curr];
   }
+
+@Override
+public E[] getValues() {
+	return this.listArray;
+}
 }
